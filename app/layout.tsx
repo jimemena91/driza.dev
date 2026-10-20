@@ -1,11 +1,19 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Playfair_Display, Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import "@fontsource/inter/400.css"
+import "@fontsource/inter/500.css"
+import "@fontsource/inter/600.css"
+import "@fontsource/montserrat/500.css"
+import "@fontsource/montserrat/600.css"
+import "@fontsource/montserrat/700.css"
+import "@fontsource/montserrat/800.css"
+import "@fontsource/fredoka/600.css"
+import "@fontsource/fredoka/700.css"
+import "@fontsource/orbitron/700.css"
+import "@fontsource/orbitron/900.css"
 import "./globals.css"
 
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif" })
-const inter = Inter({ subsets: ["latin"] })
 
 const TITLE = "Driza — Software de gestión a medida para tu negocio"
 const DESCRIPTION =
@@ -26,7 +34,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
-    { "@type": "Organization", name: "Driza", url: "https://driza.dev", logo: "https://driza.dev/driza-logo.png", areaServed: "AR" },
+    { "@type": "Organization", name: "Driza", url: "https://driza.dev", logo: "https://driza.dev/driza-d-dorada.png", areaServed: "AR" },
     { "@type": "WebSite", name: "Driza", url: "https://driza.dev", inLanguage: "es-AR" },
   ],
 }
@@ -37,8 +45,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es">
-      <body className={`${inter.className} ${playfair.variable} antialiased`}>
+    <html lang="es" className="dark">
+      <body className="antialiased">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
         {children}
         <Analytics />

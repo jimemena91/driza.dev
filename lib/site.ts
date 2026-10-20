@@ -1,22 +1,31 @@
-// Datos editables del sitio. Cambiá acá el contacto y los links de cada producto.
+// Datos editables del sitio. Cambiá acá el contacto, las redes y el detalle de cada producto.
 export const SITE = {
   // TODO(Jimena): reemplazar por tus datos reales
   email: "hola@driza.dev",
   whatsapp: "5491100000000", // formato internacional, sin + ni espacios
   location: "Argentina",
-  github: "https://github.com/jimemena91",
+  since: 2024, // año que aparece en el logo y en el pie
+  // Solo se muestran las redes que tengan link.
+  socials: {
+    github: "https://github.com/jimemena91",
+    instagram: "",
+    linkedin: "",
+    youtube: "",
+  },
 }
 
+export type ProductId = "link" | "tx" | "camp" | "bot" | "points"
+
 export type Product = {
-  id: string
+  id: ProductId
   name: string
-  tagline: string
+  title: string
+  short: string
   description: string
   features: string[]
   stack: string
   status: "En producción" | "En desarrollo"
-  accent: string // color propio de cada producto
-  icon: "link" | "tx" | "camp" | "bot" | "points"
+  color: string // color de neón del producto
   href?: string
 }
 
@@ -24,7 +33,8 @@ export const PRODUCTS: Product[] = [
   {
     id: "link",
     name: "DrizaLink",
-    tagline: "Vendé online y en el local, desde un mismo lugar",
+    title: "Ventas online y punto de venta",
+    short: "Checkout por WhatsApp y gestión comercial.",
     description:
       "Panel de gestión con punto de venta y tienda online propia para cada comercio. El cliente arma su pedido y lo cierra por WhatsApp.",
     features: [
@@ -35,13 +45,13 @@ export const PRODUCTS: Product[] = [
     ],
     stack: "Next.js · TypeScript · MySQL",
     status: "En producción",
-    accent: "#FF6A00",
-    icon: "link",
+    color: "#ff8a1f",
   },
   {
     id: "tx",
     name: "DrizaTx",
-    tagline: "Turnos y filas sin caos en la atención",
+    title: "Turnos y colas de atención",
+    short: "Ordena la atención al público sin fricción.",
     description:
       "Sistema de gestión de colas para lugares con mucha atención al público: emisión de turnos, puestos de atención y pantallas.",
     features: [
@@ -52,14 +62,14 @@ export const PRODUCTS: Product[] = [
     ],
     stack: "NestJS · Next.js · MySQL",
     status: "En producción",
-    accent: "#8B2FE0",
-    icon: "tx",
+    color: "#a64dff",
     href: "https://github.com/jimemena91/drizatx_stack",
   },
   {
     id: "camp",
     name: "DrizaCamp",
-    tagline: "Gestión para campings y guarderías náuticas",
+    title: "Gestión de campings y guarderías náuticas",
+    short: "Clientes, movimientos, cobros y administración.",
     description:
       "Control de clientes, registros de ingreso y egreso, embarcaciones, vehículos, extras y cobros, con reportes para el dashboard.",
     features: [
@@ -70,13 +80,13 @@ export const PRODUCTS: Product[] = [
     ],
     stack: "React · Node.js · MySQL",
     status: "En producción",
-    accent: "#2E8FD8",
-    icon: "camp",
+    color: "#2fd67b",
   },
   {
     id: "bot",
     name: "Dribot",
-    tagline: "WhatsApp ordenado y con respuestas automáticas",
+    title: "Bandeja de WhatsApp con respuestas automáticas",
+    short: "Automatiza consultas y acompaña ventas.",
     description:
       "Bandeja unificada de conversaciones con contactos, respuestas rápidas y automatizaciones, pensada para negocios locales.",
     features: [
@@ -87,13 +97,13 @@ export const PRODUCTS: Product[] = [
     ],
     stack: "Next.js · TypeScript",
     status: "En desarrollo",
-    accent: "#1FB5A8",
-    icon: "bot",
+    color: "#1fc8ee",
   },
   {
     id: "points",
     name: "DrizaPoints",
-    tagline: "Programa de puntos para que vuelvan a comprar",
+    title: "Programa de puntos para fidelizar clientes",
+    short: "Premia compras y fortalece la recompra.",
     description:
       "Plataforma de fidelización independiente del sistema de ventas: acreditaciones, canjes, recompensas y saldos de clientes.",
     features: [
@@ -104,7 +114,6 @@ export const PRODUCTS: Product[] = [
     ],
     stack: "NestJS · Prisma · PostgreSQL",
     status: "En desarrollo",
-    accent: "#D61F8C",
-    icon: "points",
+    color: "#ff3d5e",
   },
 ]

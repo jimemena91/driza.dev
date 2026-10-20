@@ -38,6 +38,6 @@ pnpm build      # verifica que compile
 | --- | --- |
 | `lib/site.ts` | Contacto y datos de cada producto |
 | `app/layout.tsx` | Título, descripción y datos para buscadores y redes |
-| `public/driza-logo.png` | Logo del sitio |
+| `public/driza-d-dorada.png` | Logo dorado de la D (el original en negro está en `driza-logo-negro.png`) |
 | `app/icon.png`, `app/apple-icon.png` | Ícono de la pestaña y del celular |
 | `app/opengraph-image.png` | Imagen al compartir el link |
