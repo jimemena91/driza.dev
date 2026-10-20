@@ -27,7 +27,7 @@ pnpm build      # verifica que compile
 
 ## Después de publicar (para promocionar)
 
-- Google Search Console: agregá `https://driza.dev`, verificá el dominio y enviá `https://driza.dev/sitemap.xml`.
+- Google Search Console: agregá `https://www.driza.dev` (o el dominio completo `driza.dev`), verificalo y enviá `https://www.driza.dev/sitemap.xml`.
 - Probá cómo se ve al compartirlo pegando el link en WhatsApp o LinkedIn
   (la imagen de vista previa está en `app/opengraph-image.png`).
 - Si el link muestra la imagen vieja, borrá la caché en https://developers.facebook.com/tools/debug/

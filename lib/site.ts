@@ -1,5 +1,7 @@
 // Datos editables del sitio. Cambiá acá el contacto, las redes y el detalle de cada producto.
 export const SITE = {
+  // Dirección principal del sitio (la que ve Google). Hoy driza.dev redirige a www.
+  url: "https://www.driza.dev",
   email: "drizadev@gmail.com",
   whatsapp: "5492634280009", // formato internacional, sin + ni espacios
   location: "Argentina",
