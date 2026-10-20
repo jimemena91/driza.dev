@@ -17,7 +17,7 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-lg">
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-2 lg:px-8">
         <a href="#top" aria-label="Driza, inicio">
-          <Logo size={56} />
+          <Logo size={52} />
         </a>
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (

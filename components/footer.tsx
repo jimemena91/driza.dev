@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="border-t border-border px-5 py-12 lg:px-8">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-center md:justify-between">
         <div>
-          <Logo size={44} />
+          <Logo size={72} />
           <p className="mt-3 text-sm text-muted-foreground">Software de gestión a medida · {SITE.location}</p>
         </div>
         <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted-foreground">

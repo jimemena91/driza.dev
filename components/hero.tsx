@@ -38,7 +38,7 @@ export function Hero() {
         </ul>
         </div>
         <div className="hidden justify-center lg:flex">
-          <Image src="/driza-logo.png" alt="Logo de Driza: un velero dorado sobre el mar" width={566} height={441} className="w-full max-w-sm drop-shadow-xl" priority />
+          <Image src="/driza-logo.png" alt="Logo de Driza: una D con una vela" width={519} height={600} className="w-full max-w-xs" priority />
         </div>
       </div>
     </section>
