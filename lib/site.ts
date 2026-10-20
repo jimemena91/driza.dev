@@ -1,8 +1,7 @@
 // Datos editables del sitio. Cambiá acá el contacto, las redes y el detalle de cada producto.
 export const SITE = {
-  // TODO(Jimena): reemplazar por tus datos reales
-  email: "hola@driza.dev",
-  whatsapp: "5491100000000", // formato internacional, sin + ni espacios
+  email: "drizadev@gmail.com",
+  whatsapp: "5492634280009", // formato internacional, sin + ni espacios
   location: "Argentina",
   since: 2024, // año que aparece en el logo y en el pie
   // Solo se muestran las redes que tengan link.
