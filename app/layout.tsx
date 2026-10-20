@@ -8,9 +8,8 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-serif"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Driza - Soluciones de Software de Gestión",
-  description: "Software de gestión para campings, filas y moda. Optimiza tu negocio con Driza.",
-  generator: "v0.app",
+  title: "Driza — Ecosistema de software de gestión",
+  description: "DrizaLink, DrizaTx, DrizaCamp, Dribot y DrizaPoints: productos de gestión que trabajan juntos y se adaptan a cada negocio.",
 }
 
 export default function RootLayout({
@@ -19,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" className="dark">
+    <html lang="es">
       <body className={`${inter.className} ${playfair.variable} antialiased`}>
         {children}
         <Analytics />
