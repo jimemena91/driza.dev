@@ -69,15 +69,15 @@ export const PRODUCTS: Product[] = [
   {
     id: "camp",
     name: "DrizaCamp",
-    title: "Gestión de campings y guarderías náuticas",
-    short: "Clientes, movimientos, cobros y administración.",
+    title: "Gestión de campings y clubes náuticos",
+    short: "Ingresos, guardería, restaurante, cantina y caja.",
     description:
-      "Control de clientes, registros de ingreso y egreso, embarcaciones, vehículos, extras y cobros, con reportes para el dashboard.",
+      "Ingresos, clientes y embarcaciones, guardería náutica, restaurante con app de mozos, cantina y cierre de caja, con reportes en el dashboard.",
     features: [
-      "Clientes, embarcaciones y vehículos",
-      "Guardería, movimientos y extras",
-      "Medios de pago e histórico de ventas por usuario",
-      "Dashboard e informes en PDF con tu logo",
+      "Ingresos, clientes, embarcaciones y guardería",
+      "Restaurante con app de mozos y pantalla de cocina",
+      "Cantina con stock y código de barras",
+      "Cierre de caja con PIN, dashboard e informes en PDF",
     ],
     stack: "React · Node.js · MySQL",
     status: "En producción",
