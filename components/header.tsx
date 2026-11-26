@@ -8,6 +8,7 @@ import { SITE } from "@/lib/site"
 const links = [
   { href: "/#top", label: "Inicio" },
   { href: "/#ecosistema", label: "Ecosistema" },
+  { href: "/#clientes", label: "Clientes" },
   { href: "/#conexion", label: "Cómo se conectan" },
   { href: "/#trabajo", label: "Cómo trabajo" },
   { href: "/#contacto", label: "Contacto" },

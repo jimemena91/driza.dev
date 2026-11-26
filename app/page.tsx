@@ -1,4 +1,5 @@
 import { Approach } from "@/components/approach"
+import { ClientsHome } from "@/components/clients-home"
 import { Connection } from "@/components/connection"
 import { Contact } from "@/components/contact"
 import { Ecosystem } from "@/components/ecosystem"
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Ecosystem />
+      <ClientsHome />
       <Connection />
       <Approach />
       <Contact />
