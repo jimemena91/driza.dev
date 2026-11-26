@@ -115,6 +115,14 @@ export const DETAILS: Record<ProductId, Detail> = {
         ],
       },
     ],
+    shotsTitle: "Así se ve",
+    shots: [
+      { src: "/capturas/link/tienda.webp", title: "Tienda online", caption: "Inicio de la tienda con productos destacados, precio y botón para agregar al pedido. Tienda de ejemplo.", w: 1400, h: 1069 },
+      { src: "/capturas/link/tablero.webp", title: "Tablero del panel", caption: "Ventas del día, de la semana y del mes, ticket promedio, ganancia y los últimos pedidos, de un vistazo.", w: 1400, h: 1069 },
+      { src: "/capturas/link/nueva-venta.webp", title: "Nueva venta en el mostrador", caption: "Se busca o se escanea el producto, se elige la cantidad con Enter y se cobra con F2. Atajos para todo.", w: 1400, h: 1069 },
+      { src: "/capturas/link/pedidos.webp", title: "Panel de pedidos", caption: "Todos los pedidos con su estado, modalidad (retiro o envío) y fecha; filtros y hoja de reparto lista para imprimir.", w: 1400, h: 1069 },
+      { src: "/capturas/link/link-go.webp", title: "Link Go en el celular", caption: "Acciones rápidas sin entrar al panel: vender, controlar stock, sumar o restar, cargar un producto y actualizar precios.", w: 600, h: 1169, device: "celular" },
+    ],
     plans: [
       {
         name: "Online",

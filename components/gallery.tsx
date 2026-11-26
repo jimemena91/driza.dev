@@ -50,7 +50,7 @@ export function Gallery({ shots, color }: { shots: Shot[]; color: string }) {
         </div>
       )}
       {phones.length > 0 && (
-        <div className={`grid grid-cols-2 gap-4 sm:gap-5 lg:grid-cols-4 ${wide.length > 0 ? "mt-8" : ""} ${phones.length < 3 ? "max-w-xl" : ""}`}>
+        <div className={`grid gap-4 sm:gap-5 ${phones.length === 1 ? "" : "grid-cols-2 lg:grid-cols-4"} ${wide.length > 0 ? "mt-8" : ""} ${phones.length === 1 ? "max-w-[19rem] grid-cols-1" : phones.length < 3 ? "max-w-xl" : ""}`}>
           {phones.map((s) => (
             <Card key={s.src} s={s} phone />
           ))}
