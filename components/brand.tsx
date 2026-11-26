@@ -53,6 +53,10 @@ const STYLES: Record<ProductId, { text: string; css: CSSProperties }> = {
     text: "DriBot",
     css: { fontFamily: "var(--font-round)", fontWeight: 600, backgroundImage: "linear-gradient(180deg,#40e0ff,#2d7bff)" },
   },
+  locus: {
+    text: "LOCUS",
+    css: { fontFamily: "var(--font-tech)", fontWeight: 900, backgroundImage: "linear-gradient(180deg,#5ff5e3,#14b9c8)", letterSpacing: "0.04em" },
+  },
   points: {
     text: "Points",
     css: { fontFamily: "var(--font-round)", fontWeight: 700, backgroundImage: "linear-gradient(180deg,#ff6b86,#e0193f)" },

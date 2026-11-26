@@ -8,6 +8,7 @@ const TEXT: Record<ProductId, [string, string]> = {
   points: ["Fideliza clientes", "Premia y hace crecer tu negocio."],
   tx: ["Gestiona turnos de atención", "Ordena la atención."],
   camp: ["", ""],
+  locus: ["Reservas de turnos", "Check-in con el turnero."],
 }
 
 function Node({ id }: { id: ProductId }) {

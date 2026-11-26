@@ -6,11 +6,11 @@ import { Brand } from "@/components/brand"
 import { SITE } from "@/lib/site"
 
 const links = [
-  { href: "#top", label: "Inicio" },
-  { href: "#ecosistema", label: "Ecosistema" },
-  { href: "#conexion", label: "Cómo se conectan" },
-  { href: "#trabajo", label: "Cómo trabajo" },
-  { href: "#contacto", label: "Contacto" },
+  { href: "/#top", label: "Inicio" },
+  { href: "/#ecosistema", label: "Ecosistema" },
+  { href: "/#conexion", label: "Cómo se conectan" },
+  { href: "/#trabajo", label: "Cómo trabajo" },
+  { href: "/#contacto", label: "Contacto" },
 ]
 
 export function Header() {
@@ -18,7 +18,7 @@ export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#07080c]/80 backdrop-blur-lg">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
-        <a href="#top" aria-label="Driza, inicio">
+        <a href="/" aria-label="Driza, inicio">
           <Brand size={44} since={SITE.since} />
         </a>
         <div className="hidden items-center gap-9 lg:flex">
@@ -34,7 +34,7 @@ export function Header() {
           ))}
         </div>
         <a
-          href="#contacto"
+          href="/#contacto"
           className="hidden items-center gap-2 rounded-xl bg-gradient-to-b from-[#ffd75a] to-[#f2a91a] px-5 py-2.5 text-sm font-bold text-[#14100a] shadow-[0_0_24px_rgba(255,199,44,0.35)] transition hover:brightness-110 lg:inline-flex"
         >
           Hablemos <ArrowRight className="h-4 w-4" />
@@ -51,7 +51,7 @@ export function Header() {
                 {l.label}
               </a>
             ))}
-            <a href="#contacto" onClick={() => setOpen(false)} className="mt-2 block rounded-xl bg-[var(--gold)] px-5 py-3 text-center font-bold text-[#14100a]">
+            <a href="/#contacto" onClick={() => setOpen(false)} className="mt-2 block rounded-xl bg-[var(--gold)] px-5 py-3 text-center font-bold text-[#14100a]">
               Hablemos
             </a>
           </div>

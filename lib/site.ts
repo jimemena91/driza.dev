@@ -15,7 +15,7 @@ export const SITE = {
   },
 }
 
-export type ProductId = "link" | "tx" | "camp" | "bot" | "points"
+export type ProductId = "link" | "tx" | "camp" | "bot" | "points" | "locus"
 
 export type Product = {
   id: ProductId
@@ -24,7 +24,7 @@ export type Product = {
   short: string
   description: string
   features: string[]
-  stack: string
+  stack?: string
   status: "En producción" | "En desarrollo"
   color: string // color de neón del producto
   href?: string
@@ -117,4 +117,25 @@ export const PRODUCTS: Product[] = [
     status: "En desarrollo",
     color: "#ff3d5e",
   },
+  {
+    id: "locus",
+    name: "Locus",
+    title: "Reservas de turnos para canchas y espacios",
+    short: "Calendario, cobros y cantina de tu complejo en un solo lugar.",
+    description:
+      "Sistema de reservas para complejos deportivos y cualquier espacio que se reserve por turno: calendario único, reservas desde el celular del jugador, señas y cobros, cantina y torneos.",
+    features: [
+      "Calendario único: nadie puede reservar un turno ya tomado",
+      "Los jugadores reservan solos desde el celular",
+      "Señas, cobros y cierre de caja sin planillas",
+      "Cantina, cuentas corrientes y torneos en el mismo sistema",
+    ],
+    status: "En desarrollo",
+    color: "#22e3cf",
+  },
 ]
+
+/** Link de WhatsApp con un mensaje ya escrito. */
+export function whatsappLink(message: string) {
+  return `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(message)}`
+}

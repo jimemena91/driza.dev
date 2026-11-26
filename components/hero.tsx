@@ -1,4 +1,4 @@
-import { ArrowRight, Cog, Signal, ShoppingCart, CalendarDays, MessageCircle, Users, Tent } from "lucide-react"
+import { ArrowRight, Cog, Signal, ShoppingCart, CalendarDays, MessageCircle, Users, Tent, Trophy } from "lucide-react"
 import type { ReactNode } from "react"
 import { ByDriza, DMark, Wordmark } from "@/components/brand"
 import { Sailboat } from "@/components/sailboat"
@@ -10,23 +10,26 @@ const ICONS: Record<ProductId, ReactNode> = {
   camp: <Tent className="h-[1.1em] w-[1.1em]" />,
   bot: <MessageCircle className="h-[1.1em] w-[1.1em]" />,
   points: <Users className="h-[1.1em] w-[1.1em]" />,
+  locus: <Trophy className="h-[1.1em] w-[1.1em]" />,
 }
 
 // Posición de cada tarjeta dentro de un lienzo de 100 x 66 unidades.
 const SLOTS: Record<ProductId, { x: number; y: number; w: number; h: number }> = {
-  link: { x: 34, y: 0, w: 30, h: 21 },
-  tx: { x: 1, y: 12, w: 28, h: 21 },
-  camp: { x: 71, y: 8, w: 28, h: 21 },
-  bot: { x: 0, y: 45, w: 29, h: 21 },
-  points: { x: 71, y: 45, w: 29, h: 21 },
+  link: { x: 0, y: 0, w: 29, h: 20 },
+  tx: { x: 0, y: 23, w: 29, h: 20 },
+  bot: { x: 0, y: 46, w: 29, h: 20 },
+  camp: { x: 71, y: 0, w: 29, h: 20 },
+  points: { x: 71, y: 23, w: 29, h: 20 },
+  locus: { x: 71, y: 46, w: 29, h: 20 },
 }
 
 const WIRES: { id: ProductId; d: string }[] = [
-  { id: "link", d: "M50 21 V25" },
-  { id: "tx", d: "M36 33 H32 V22.5 H29" },
-  { id: "camp", d: "M64 33 H68 V18.5 H71" },
-  { id: "bot", d: "M36 47 H32 V55.5 H29" },
-  { id: "points", d: "M64 47 H68 V55.5 H71" },
+  { id: "link", d: "M29 10 H33 V23 H36" },
+  { id: "tx", d: "M29 33 H36" },
+  { id: "bot", d: "M29 56 H33 V43 H36" },
+  { id: "camp", d: "M71 10 H67 V23 H64" },
+  { id: "points", d: "M71 33 H64" },
+  { id: "locus", d: "M71 56 H67 V43 H64" },
 ]
 
 function Chip({ id }: { id: ProductId }) {
@@ -65,7 +68,7 @@ function HeroVisual() {
           return <path key={w.id} d={w.d} stroke={c} strokeWidth="0.55" strokeLinejoin="round" style={{ filter: `drop-shadow(0 0 1.5px ${c})` }} />
         })}
       </svg>
-      {(["link", "tx", "camp", "bot", "points"] as ProductId[]).map((id) => (
+      {(["link", "tx", "bot", "camp", "points", "locus"] as ProductId[]).map((id) => (
         <Chip key={id} id={id} />
       ))}
       {/* Tile central */}
@@ -73,7 +76,7 @@ function HeroVisual() {
         className="absolute flex flex-col items-center justify-center rounded-[16px] border border-white/15"
         style={{
           left: "36%",
-          top: `${(25 / 66) * 100}%`,
+          top: `${(17 / 66) * 100}%`,
           width: "28%",
           height: `${(32 / 66) * 100}%`,
           background: "linear-gradient(160deg,#171922,#06070b 70%)",

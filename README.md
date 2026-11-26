@@ -36,7 +36,9 @@ pnpm build      # verifica que compile
 
 | Archivo | Para qué |
 | --- | --- |
-| `lib/site.ts` | Contacto y datos de cada producto |
+| `lib/site.ts` | Contacto y datos de cada producto (tarjetas y portada) |
+| `lib/product-details.ts` | Texto, planes, preguntas y capturas de la página de cada sistema (`/productos/<id>`). Sin precios |
+| `public/capturas/<sistema>/` | Capturas de pantalla de cada sistema. Para agregar una: subí la imagen y sumala a `shots` en `product-details.ts` |
 | `app/layout.tsx` | Título, descripción y datos para buscadores y redes |
 | `public/driza-d-dorada.png` | Logo dorado de la D (el original en negro está en `driza-logo-negro.png`) |
 | `app/icon.png`, `app/apple-icon.png` | Ícono de la pestaña y del celular |
