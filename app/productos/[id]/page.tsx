@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { ByDriza, Wordmark } from "@/components/brand"
+import { ClientsStrip } from "@/components/clients-strip"
 import { Footer } from "@/components/footer"
 import { Gallery } from "@/components/gallery"
 import { Header } from "@/components/header"
@@ -317,6 +318,8 @@ export default async function ProductPage({ params }: { params: Promise<Params> 
           </div>
         </section>
       )}
+
+      <ClientsStrip id={p.id} color={color} />
 
       {/* Cierre */}
       <section className="sunset relative overflow-hidden border-t border-white/10 px-5 py-16 lg:px-8 lg:py-20">
