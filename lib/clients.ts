@@ -15,7 +15,7 @@ export const CLIENTS: Client[] = [
   { name: "Casa Martínez", logo: "/clientes/casa-martinez.webp", systems: ["link", "tx"] },
   { name: "LK Distribuciones Eléctricas", logo: "/clientes/lk-distribuciones.webp", systems: ["link", "bot"] },
   { name: "Electropaz", logo: "/clientes/electropaz.webp", systems: ["link"] },
-  { name: "Farmacia Cruz Verde", logo: "/clientes/cruz-verde.webp", systems: ["link"] },
+  { name: "Farmacia Cruz Verde", logo: "/clientes/cruz-verde.webp", systems: ["tx"] },
   { name: "Shell 2 Drugstore", logo: "/clientes/shell-2-drugstore.webp", systems: ["link"] },
   { name: "El Biguá", logo: "/clientes/el-bigua.webp", systems: ["camp"] },
 ]
