@@ -13,6 +13,7 @@ export type Client = {
 
 export const CLIENTS: Client[] = [
   { name: "Casa Martínez", logo: "/clientes/casa-martinez.webp", systems: ["link", "tx"] },
+  { name: "El Biguá", logo: "/clientes/el-bigua.webp", systems: ["camp"] },
 ]
 
 /** Título de la sección, por sistema. */
